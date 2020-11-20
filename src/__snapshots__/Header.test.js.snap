@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Simple Snapshot Test Testing square 1`] = `
+<div
+  className="login"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      className="login__logo"
+      src="CU_logo.png"
+    />
+  </a>
+  <div
+    className="login__container"
+  >
+    <h1>
+      Sign-in
+    </h1>
+    <form>
+      <h5>
+        E-mail
+      </h5>
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <h5>
+        Password
+      </h5>
+      <input
+        onChange={[Function]}
+        type="password"
+        value=""
+      />
+      <button
+        className="login__signInButton"
+        onClick={[Function]}
+        type="submit"
+      >
+        Sign In
+      </button>
+    </form>
+    <p>
+      By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+    </p>
+    <button
+      className="login__registerButton"
+      onClick={[Function]}
+    >
+      Create your Amazon Account
+    </button>
+  </div>
+</div>
+`;

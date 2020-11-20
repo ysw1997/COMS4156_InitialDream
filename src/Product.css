@@ -1,0 +1,27 @@
+.product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 10000px;
+    min-width: 100px;
+    background-color: lightblue;
+}
+.product_info{
+    font-size: large;
+    
+}
+.product_info > img{
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+
+}
+.product_optionLineThree{
+    font-size: 23px;
+    font-weight: 900;
+    color:white;
+    margin-left:100px;
+    
+}
