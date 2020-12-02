@@ -1,22 +1,48 @@
 """Import UserMixin."""
 from flask_login import UserMixin
-from flask_login import LoginManager
-from flask import Flask
-
-APP = Flask(__name__)
-LOGIN_MANAGER = LoginManager()
-LOGIN_MANAGER.login_view = 'auth.login'
-LOGIN_MANAGER.init_app(APP)
 
 
 class User(UserMixin):
     """用户类"""
+
     # initialize
-    def __init__(self, user):
+    def __init__(self, username):
         """Initialize."""
-        self.username = user.get("name")
-        self.userid = user.get("id")
-        self.userstatus = user.get("status")
+        self.username = username
+        # self.userid =
+        self.userstatus = 'green'
+        self.is_negative = True
+        # self.at_risk = False
+        self.quarantined = False
+        self.quarantine_days = 0
+
+    def get_quarantine_days(self):
+        """Get the quarantine days."""
+        return self.quarantined_days
+
+    def set_quarantine_dyas(self, quarantine_days):
+        """Set the quarantine days."""
+        self.quarantined = quarantine_days
+
+    def add_quarantine_days(self):
+        """add quarantine days."""
+        self.quarantine_days += 1
+
+    def get_quarantine(self):
+        """Get the quarantine state."""
+        return self.quarantined
+
+    def set_quarantine(self, quarantine):
+        """Set the quarantine state."""
+        self.quarantined = quarantine
+
+    def get_negative(self):
+        """Get the covid-19 test state."""
+        return self.is_negative
+
+    def set_negative(self, negative):
+        """Set the covid-19 test state."""
+        self.is_negative = negative
 
     def get_username(self):
         """Get the username."""
