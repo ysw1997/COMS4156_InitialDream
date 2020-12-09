@@ -31,5 +31,4 @@ jobs:
       run: echo "$DOTENV" | base64 -d > .env
 
     - run: npm install
-    - run: npm run build
     - run: npm test
