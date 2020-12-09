@@ -1,0 +1,26 @@
+.yellowpass{
+   
+    display: flex;
+    align-items: center;
+
+    top:0;
+    z-index: 100;
+    height:800px;
+}
+.header_link{
+    color:white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.container11{
+
+    width: 450px;
+    height:450px;
+    /* height: 500px; */
+    /* border: 1px solid black; */
+    text-align: center; float: none;
+    margin:auto;
+    margin-top:center;
+    background-color:rgb(230, 162, 18);
+  }
