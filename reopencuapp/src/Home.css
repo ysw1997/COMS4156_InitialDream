@@ -1,0 +1,22 @@
+.home{
+    /* max-width: 2000px;   */
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+}
+.home_row{
+    display:flex;
+    z-index:1;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.home_image{
+    width:100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+
+}

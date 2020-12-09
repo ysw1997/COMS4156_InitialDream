@@ -1,0 +1,73 @@
+<html>
+<head>
+<title></title>
+
+<script type="text/javascript">
+function initialize(){
+ if(document.getElementById("trigger")){
+  var button = document.getElementById("trigger");
+  button.onclick = add_drop;
+ }
+}
+
+function addField(){
+    var showField = document.createElement("div");
+    showField.innerHTML = "<input type=\\"text\\" />";
+    var button = document.getElementById("addfieldbutton");
+    button.parentNode.insertBefore(showField,button);
+}
+
+function chooseOption() {
+   var selectedOption = this.options[this.selectedIndex].value;   
+   if (selectedOption=="one") {
+    var showField = document.createElement("div");
+    showField.innerHTML = "<input type=\\"text\\" />";
+    var showButton = document.createElement("div");
+    showButton.innerHTML = "<input type=\\"button\\" id=\\"addfieldbutton\\" value=\\"add text field\\" />";
+    showButton.onclick = addField;
+    var orgDiv = document.getElementById("org_div");
+    orgDiv.parentNode.insertBefore(showField,orgDiv);
+    }
+if (selectedOption=="two") {
+    var showField = document.createElement("div");
+    showField.innerHTML = "<input type=\\"text\\" />";
+    var showButton = document.createElement("div");
+    showButton.innerHTML = "<input type=\\"button\\" id=\\"addfieldbutton\\" value=\\"add text field\\" />";
+    showButton.onclick = addField;
+    var orgDiv = document.getElementById("org_div");
+    orgDiv.parentNode.insertBefore(showField,orgDiv);
+   }
+if (selectedOption=="three") {
+    var showField = document.createElement("div");
+    showField.innerHTML = "<input type=\\"text\\" />";
+    var showButton = document.createElement("div");
+    showButton.innerHTML = "<input type=\\"button\\" id=\\"addfieldbutton\\" value=\\"add text field\\" />";
+    showButton.onclick = addField;
+    var orgDiv = document.getElementById("org_div");
+    orgDiv.parentNode.insertBefore(showField,orgDiv);
+   }
+    orgDiv.parentNode.insertBefore(showButton,orgDiv);
+}
+
+
+function add_drop(){
+  var newDiv = document.createElement("div");
+  newDiv.innerHTML = "<select id=\\"options\\"><option value=\\"one\\">1</option><option value=\\"two\\">2</option><option value=\\"three\\">3</option></select>";
+  var orgDiv = document.getElementById("org_div");
+  orgDiv.parentNode.insertBefore(newDiv,orgDiv);
+
+  var selectedOption = document.getElementById("options");
+  selectedOption.onchange = chooseOption;
+}
+
+
+</script>
+</head>
+<body onload="initialize();">
+
+
+<div id="org_div"></div>
+<div id="test"></div>
+<input type="button" id="trigger" value="add drop down" />
+</body>
+</html>

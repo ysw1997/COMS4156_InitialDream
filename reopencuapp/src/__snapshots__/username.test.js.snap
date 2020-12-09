@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Square Simple Snapshot Test Testing square 1`] = `
+<button
+  className="square"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Square Simple Snapshot Test Testing square 2`] = `
+<button
+  className="square"
+  onClick={[Function]}
+/>
+`;
